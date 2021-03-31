@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;">
+  <style>
+      body{
+          margin: 0%;
+          background-image:url('banner.png');
+        }
+      #main{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          overflow: hidden;
+      }
+      #box1{
+          width: 530px;
+          height: 625%;
+          background-image:url('png1.png');
+            position: absolute;
+            bottom: -100%;
+            left: 20%;
+            animation: anim 2s forwards,anim2 3s forwards 3s;
+      }
+      #box1::after{
+          content:'';
+          position: absolute;
+          width: 530px;
+          height: 625px;
+          background-image:url('6.png') ;
+          left: 0px;
+          z-index: -1 ;
+            }
+      
+      @keyframes anim {
+
+          from{
+bottom: -100%;
+          }
+
+          to{
+              bottom: 0%;
+          }
+      }
+      @keyframes anim2 {
+          from{
+                       left: 30%;
+                      width:530px ;
+          }
+          to{
+                    width: 0%;
+                    left: 50%;
+             }
+      }
+      #box2{
+          width: auto;
+          height: auto;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: rgb(255, 254, 254);
+          font-size: 10em;
+          font-weight: 500;
+          line-height: 130px;
+          position: absolute;
+          top: 250px;
+          left: 100px;
+          overflow: hidden;
+      }
+      #text{
+          position: relative;
+          left: -100%;
+          animation: anim3 2s forwards 3s;
+          font-family: fantasy;
+
+      }
+
+     @keyframes anim3 {
+         from{
+             left: -100%;
+
+         }
+         to{
+             left: 0%;
+                      }
+     }
+     #box3{
+         overflow: hidden;
+         overflow: hidden;
+    position: relative;
+    top: 25%;
+    left: 20%;
+
+     }
+     #container{
+         width: 100%;
+         position: absolute;
+         top: -100%;
+         animation: anim4 2s forwards 2.5s ;
+     }
+#logo{
+   float: left;
+   margin-top: 20px;
+   margin-left: 100px;
+}
+
+#logo img{
+    width: 100px;
+
+}
+
+
+
+@keyframes anim4{ from{
+    top: -100%;
+
+}
+ to{
+     top: 0%;
+ }
+
+}
+
+
+
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 53%;
+    padding: 35px 23px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;}
+
+
+header.sticky{
+
+
+background: #fff;
+padding: 10px 100px;
+box-shadow: 0 5px 20px rgba(255, 0, 0, 0.05);
+}
+header .logo{
+
+color: #fff;
+font-weight: 700;
+font-size: 2em;
+text-decoration: none;
+}
+header.sticky .logo{
+color:#111
+}
+
+header .logo span{
+
+color: #ff0101;
+
+}
+
+header  .Navi{
+position: relative;
+display: flex;
+}
+
+header .Navi li{
+
+list-style: none;
+margin-left: 30px;
+
+}
+header .Navi li a{
+text-decoration: none;
+color: #fff;
+ font-weight: 300;
+}
+
+
+header.sticky  .Navi li a{
+color: #111;
+}
+
+header.sticky  .Navi li a:hover{
+
+color: #ff0157;
+}   
+
+section{
+padding: 100px;
+}
+
+
+
+
+
+        </style>
+</head>
+<body>
+
+
+
+  <header>
+    <a href="" class="logo">
+        Smirnoff
+        <span>.</span></a>
+    <ul class="Navi">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Contato  </a></li>
+    </ul>
+    
+</header>
+    <div id="main">
+    <div id="box1"></div>
+
+    <div id="box2">
+        <div id="text">
+          
+            
+        </div>
+    </div>
+     <div id="box3">
+         <div id="container">
+             <div id="logo">
+                 <img src="./pn3.png">
+                 </div>                     
+            
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </div>
+</nav>
+
+                   
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/CntvGtl7woU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </Body>
+</html>
