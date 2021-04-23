@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>CrisFlix</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png"></a>
+
+        <ul class="navegaçao">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Series </a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Minha lista</a></li>
+        </ul>
+        <div class="Pesquisar">
+            <input type="text" placeholder="Pesquisa">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+
+        <img src="./bg.jpg   " class="bg">
+
+        <div class="content">
+            <img src="./gu.png" class="filmetitulo">
+            <h4>
+                <span> 2020</span>
+
+                <span><i> Faixa livre</i></span>
+
+                <span> Infinito</span>
+                <span> atentaçao</span>
+            </h4>
+
+            <p>
+                As aventuras do super Gustavo começa em uma jornada que muitos historiadores duvidariam, o rapazinho vem
+                dos tempos dos Croods
+                que morde pedra e montado em seu dinossauro, mas o que vira depois dessa erad e 1 ano , em um filme que
+                só tem um personagem o que vamos esperar?
+            </p>
+
+            <div class="botao">
+                <a href="#"> <i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"> <i class="fa fa-plus" aria-hidden="true"></i>Minha lista</a>
+            </div>
+        </div>
+        <a class="play" onclick="togglevideo();"><img src="./play.png">Confira o trailer!</a>
+    </div>
+    <div class="trailer">
+        <video src="./Guvideo.mp4" controls="true" autoplay="true"></video>
+        <img src="./close.png" class="close" onclick="togglevideo();">
+    </div>
+
+
+    <script>
+        function togglevideo() {
+            const trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active');
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
